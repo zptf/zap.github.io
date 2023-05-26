@@ -14,6 +14,7 @@
     <div id="main" class="center">
         <div id="overlay" onclick="music.play(); addStuff();"><span class="header center" id="status_text"></span></div>
     </div>
+	<div id="discord-embed"></div>
     <script>
         function handleAnimations() {
             let animations = [
@@ -149,6 +150,24 @@
                 indefiniteWrite();
             }).start();
         }
+	    
+	      var embed = {
+    			title: "zaplec",
+    			description: "dont go please...",
+    			image: {
+      				url: "https://cdn.discordapp.com/attachments/928464560900431912/1109282991542382662/ab67706c0000bebb47599f427f650a5711a2fc14.png"
+    			},
+    			url: "https://zaplec.pt"
+  		};
+
+  // Convert the embed object to JSON
+  var embedJson = JSON.stringify(embed);
+
+  // Generate the embed code
+  var embedCode = `<iframe src="https://discord.com/widget?id=808254986860494848&theme=dark&embed=${encodeURIComponent(embedJson)}" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>`;
+
+  // Inject the embed code into the container element
+  document.getElementById("discord-embed").innerHTML = embedCode;
     </script>
 </body>
 
