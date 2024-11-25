@@ -138,15 +138,15 @@ body {
 }
 
 .role-icon-wrapper {
-    padding: 7px 10px 1.5px;
+    padding: 8px 12px;
     border-radius: 50px;
     max-width: -moz-fit-content;
     max-width: fit-content;
     display: inline-flex;
-    place-items: center;
+    align-items: center;
     margin: 2px auto 20px;
-    background-color: #0d1b487d;
-    border: 1px solid #0d1b48;
+    background-color: #0a296658;
+    border: 1px solid #30599778;
 }
 
 .icon:active {
@@ -594,4 +594,11 @@ social-icons {
     .infocontainer h3 {
         max-width: 100px;
     }
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px; /* Ajuste o valor para definir o espaçamento desejado */
 }
