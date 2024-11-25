@@ -233,8 +233,6 @@ social-icons {
     font-weight: bold;
 }
 
-
-
 .role-icon {
     display: inline-block;
     position: relative;
@@ -307,9 +305,6 @@ social-icons {
 .role-icon:focus-within .tooltip {
     animation: popin 0.1s ease-out forwards;
 }
-
-
-
 
 /* glow animation */
 
